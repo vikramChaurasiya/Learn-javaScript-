@@ -10,5 +10,15 @@ if(true){
 
 // console.log(a);
 // console.log(b);
-console.log(c);
+// console.log(c);
+
+function addone(num){
+    return num + 1
+}
+
+console.log(addone(4))
+
+const addTwo = function(num){ //this is hoistng function
+    return num + 2;
+}
 
