@@ -34,6 +34,42 @@ function loginUserMessage(usernName){
 }
 
 //console.log(loginUserMessage("Vikram"));
-console.log(loginUserMessage()); //when no any passing throw the arrangements then print undefine
+// console.log(loginUserMessage()); //when no any passing throw the arrangements then print undefine
 
+
+//part -2
+function calculateCartPrice(num1){
+    return num1; //it function has only one parameter pass so it is return only one argument.
+} 
+console.log(calculateCartPrice(20));
+
+function calculateCartPrices(...num1){
+    return num1; //using rest operators multiple argument pass  form one parameter.
+}
+
+console.log(calculateCartPrices(200,300,4000));
+
+const user = {
+    userName: "vikram",
+    price: 199
+}
+//how to use object in function.
+function handleObjects(anyobjects){ 
+    console.log(`UserName is ${anyobjects.userName} and price is ${anyobjects.price}`);
+}
+//handleObjects(user);
+
+handleObjects({  //it is also use object in function.
+    userName :"sam",
+    price: 399
+});
+
+//how to use Array in function.
+const myNewArray = [200,300,4000];
+
+function returnSecondValue(getArray){
+    return getArray[2];
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,300,4000]));
 
