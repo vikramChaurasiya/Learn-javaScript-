@@ -1,49 +1,48 @@
-// for
+//for
 
-for (let i = 0; i <= 10; i++) {
-    const element = i;
-    if (element == 5) {
-        //console.log("5 is best number");
+/*
+
+for(let i = 0; i<=10; i++){
+    
+    console.log(i);
+}
+
+for(let i = 1; i<5; i++){
+    console.log("outer loop");
+    for(let j = 1; j<5; j++){
+        console.log("innner loop");
     }
-    //console.log(element);
-    
 }
 
-// console.log(element);
+//how to access array elements
 
-for (let i = 1; i <= 10; i++) {
-    //console.log(`Outer loop value: ${i}`);
-   for (let j = 1; j <= 10; j++) {
-    //console.log(`Inner loop value ${j} and inner loop ${i}`);
-    //console.log(i + '*' + j + ' = ' + i*j );
-   }
-    
-}
-let myArray = ["flash", "batman", "superman"]
-//console.log(myArray.length);
-for (let index = 0; index < myArray.length; index++) {
-    const element = myArray[index];
-    //console.log(element);
-    
+const myarray = [1,2,3,4, "hello","hi",3.14];
+for(let i =0; i<myarray.length;i++){
+    console.log(myarray[i]);
 }
 
 
-// break and continue
 
-// for (let index = 1; index <= 20; index++) {
-//     if (index == 5) {
-//         console.log(`Detected 5`);
-//         break
-//     }
-//    console.log(`Value of i is ${index}`);
-    
-// }
+//break and continue 
 
-for (let index = 1; index <= 20; index++) {
-    if (index == 5) {
+for (let i = 1; i < 20; i++) {
+    if(i ==5){
+        
         console.log(`Detected 5`);
-        continue
+        break; //it use when break the condition than it is use 
     }
-   console.log(`Value of i is ${index}`);
+    console.log(`value of  i is ${i}`);
     
 }
+
+*/
+for (let i = 1; i < 20; i++) {
+    if(i ==5){
+        
+        console.log(`Detected 5`);
+        continue; //it use when one condition is skip then use continue 
+    }
+    console.log(`value of  i is ${i}`);
+    
+}
+
