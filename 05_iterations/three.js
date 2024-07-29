@@ -12,4 +12,17 @@ for(const greet of greeting){
 
 */
 
+// map
+
+const map = new Map();//it store only unic value.
+map.set('IN',"india");
+map.set('USA',"united state of america");
+map.set('Fr',"France");
+//console.log(map);
+
+
+// for(const [key,value] of map){
+//     console.log(key , ':-',value);
+// }
+
 
