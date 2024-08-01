@@ -13,9 +13,9 @@ coding.forEach( (item)=>{
 //filter use when check condition in loop.
 
 const myNums = [1,2,3,4,5,6,7,8,9,10];
-/*
-const newNums = myNums.filter( (num) =>num<4) //single line or basic.
-console.log(newNums);
+
+// const newNums = myNums.filter( (num) =>num<4) //single line or basic.
+// console.log(newNums);
 
 //*************************OR**********************
 
@@ -25,5 +25,5 @@ const newNums= myNums.filter(  (num) =>{
 
 console.log(newNums);
 
-*/
+
 
