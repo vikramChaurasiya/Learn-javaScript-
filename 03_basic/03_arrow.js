@@ -35,11 +35,11 @@ const chai = () => {
 }
 chai();
 
-// const addTwo = (num1,num2) => { 
-//     return num1+num2
-// }
-// const addTwo = (num1,num2) => num1 + num2; //it methode implicit return.
-//const addTwo = (num1,num2) => (num1 + num2);
+const addTwo = (num1,num2) => { 
+    return num1+num2
+}
+const addTwo = (num1,num2) => num1 + num2; //it methode implicit return.
+const addTwo = (num1,num2) => (num1 + num2);
 const addTwo = (num1,num2) => {username : "vikram"}; //when arrow function use in object
 
 console.log(addTwo(3,5));
