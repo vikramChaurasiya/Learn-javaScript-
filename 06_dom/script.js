@@ -42,7 +42,9 @@ console.log(pa.getAttribute("id"));
 let pa = document.querySelector("p");
 console.log(pa.setAttribute("class", "hello"));
 
-*/
+
+
+// change any css style through js.
 
 let div = document.querySelector("div");
 div.style.background = "red";
@@ -50,3 +52,31 @@ div.style.background = "red";
 div.style.visibility = "hidden"
 div.style.fontSize = "30px";
 div.innerHTML = "Hello !";
+
+
+
+// how to create attribute through js .
+
+let newBt = document.createElement("button");
+newBt.innerText = "click me!";
+console.log(newBt);
+let  p = document.querySelector("p");
+div.append(newBt); when set last
+div.prepend(newBt); when set first
+div.before(newBt); when set before current div
+div.after(newBt); when set after current div
+p.after(newBt); 
+
+
+//how to add any heading or tag without using html then
+
+let newHeading = document.createElement("h1");
+newHeading.innerHTML = "<i>Hi, i am create a new Heading! <i/>";
+document.querySelector("body").prepend(newHeading);
+
+
+//when any tag remove usin js then
+let pa = document.querySelector("p"); fist a fall access then remove
+pa.remove();
+
+*/
