@@ -1,3 +1,8 @@
+// {
+//     "livePreview.defaultPreviewPath": "/08_Events/one.html"
+// }
+
 {
-    "livePreview.defaultPreviewPath": "/08_Events/one.html"
+    "liveServer.settings.port": 5501,
+    "editor.acceptSuggestionOnEnter": "on"
 }
