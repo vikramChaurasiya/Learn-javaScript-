@@ -1,0 +1,1 @@
+const userOne = User("vikram", 12,true);

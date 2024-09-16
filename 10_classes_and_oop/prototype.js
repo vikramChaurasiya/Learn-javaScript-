@@ -1,3 +1,5 @@
+// prototype is dafalut behaviour of javaScript.
+
 // let myName = "hitesh     "
 // let mychannel = "chai     "
 

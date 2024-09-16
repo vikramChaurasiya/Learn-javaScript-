@@ -34,11 +34,11 @@ function User (userName, loginCount, singedIn){
     return this //when this  not return then  default return 
 }
 
-// const userOne = User("vikram", 12,true);
+const userOne = User("vikram", 12,true);
 // const userTwo = User("vikram", 12,true);
-const userOne =new User("vikram", 12,true);
-const userTwo =new User("vikram", 12,true);
+// const userOne =new User("vikram", 12,true);  // new keyword create new instance for new variable
+// const userTwo =new User("vikram", 12,true);
 
-console.log(userOne.constructor); 
-//console.log(userTwo);
+// console.log(userOne.constructor); 
+console.log(userOne.constructor);
 
