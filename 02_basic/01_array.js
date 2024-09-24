@@ -34,4 +34,5 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1, 3) //this function break in two array original array
 console.log("C ", myArr);
 console.log(myn2);
+console.log("D",myArr)
 

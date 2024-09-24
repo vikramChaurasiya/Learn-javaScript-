@@ -6,12 +6,10 @@ const course = {
 
 //console.log(course.courseInstructor);
 
-const {courseInstructor:instructor} = course ;
+const {courseInstructor:instructor} = course ;  //object deconstroctor
 
 
-//console.log(courseInstructor);
+// console.log(courseInstructor);
 console.log(instructor);
 
-const navbar = () => {
-    
-}
+

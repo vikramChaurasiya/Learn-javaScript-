@@ -1,0 +1,32 @@
+<!-- difference b/w innerText, innerHTML ,innerContent. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading" id="h" >this is heading tag <span style="display: none;">Hello</span> </h1>
+</body>
+ <script>
+    const headId = document.getElementById('h');
+    console.log(headId.innerHTML);
+    // if innerHTML :-this is heading tag <span style="display: none;">Hello</span> 
+    // it is display text, tag,hidden all show
+
+    console.log(headId.innerText);
+
+    // innerText:- this is heading tag;
+    // it is display only text.
+
+    console.log(headId.textContent);
+
+    // textContent :- this is heading tag Hello
+    // it is display hidden all text.
+    
+    
+
+</script>
+</html>
