@@ -1,12 +1,14 @@
+// how to create promise.
 const PromiseOne = new Promise((resolve,reject)=>{
     //do an ansyc task.
-    //Db call, cryptography ,network
+    //Database call, cryptography ,network call
     setTimeout(()=>{
         console.log("Ansyc task is complete");
-        resolve();
+        resolve(); //resolve() to connect to .then function.
     },1000)
 })
 
+// how to promise consuming. or call
 PromiseOne.then(()=>{
     console.log("promised consumed");
 })
@@ -18,14 +20,14 @@ new Promise(function(resolve, reject){
         console.log("Ansyc task two is complete");
         resolve();
     },1000);
-}).then(function(){
+}).then(function(){ 
     console.log("ansyc 2 resolved");
     
 })
 
 const promiseThree = new Promise(function(resolve,reject){
     setTimeout(function(){
-        resolve({
+        resolve({ //in resolve pass to any type of value for ex:- array.object,...
             username: "chai",email: "chai@example.com"
         },1000)
     })
@@ -47,10 +49,10 @@ const promiseFour = new Promise (function(resolve, reject){
 })
 
 promiseFour.then(function(user){
-    console.log(user)
+    console.log( "user",user)
     return user.username;
 }).then((username)=>{
-    console.log(username);
+    console.log('username',username);
 }).catch(function(error){
     console.log(error);
 }).finally(()=>console.log("The promise is either resolvef or reject"))
@@ -94,14 +96,14 @@ getAlluser();
 */
 /********************************************OR****************************************/
 
-fetch('https://api.github.com/users/vikramChaurasiya')
-.then((response)=>{
-    return response.json();
-})
-.then((data)=>{
-    console.log(data);
+// fetch('https://api.github.com/users/vikramChaurasiya')
+// .then((response)=>{
+//     return response.json();
+// })
+// .then((data)=>{
+//     console.log(data);
     
-})
-.catch((error)=>{
-    console.log(error);
-})
+// })
+// .catch((error)=>{
+//     console.log(error);
+// })
