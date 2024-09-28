@@ -23,8 +23,8 @@ fetch('https://api.github.com/users/vikramChaurasiya')
     return response.json()
 })
 .then((data) => {
-    console.log(data.name);
-    console.log(data);
+    console.log(data.url);
+    // console.log(data);
     
 })
 .catch((error) => console.log(error))

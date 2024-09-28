@@ -7,7 +7,7 @@ const user = {
     getUserDetails: function(){
         // console.log("Got user details from database");
         // console.log(`UserName:${this.userName}`);
-        // console.log(this);
+        // console.log(this);   // if console.log(this) then it display all parent data.
         
         
     }
@@ -15,10 +15,12 @@ const user = {
 
 // console.log(user.userName);
 // console.log(user.getUserDetails());
-// console.log(this);
+// console.log(this); //if run in  golab constent then diplay empty. 
 
-//new keyword:- create a empty object/instance.
-//                when new keyword create then Constructor function call
+//new keyword:- create a empty object/instance.new keyword it is Constructor function.
+//           when new keyword create then Constructor function call
+
+// Constructor function work one object liters use multiple object instance create.
 
 function User (userName, loginCount, singedIn){
     this.userName =  userName;
@@ -34,11 +36,11 @@ function User (userName, loginCount, singedIn){
     return this //when this  not return then  default return 
 }
 
-const userOne = User("vikram", 12,true);
+// const userOne = User("vikram", 12,true);
 // const userTwo = User("vikram", 12,true);
-// const userOne =new User("vikram", 12,true);  // new keyword create new instance for new variable
+const userOne = new User("vikram", 12,true);  // new keyword create new instance for new variable
 // const userTwo =new User("vikram", 12,true);
 
-// console.log(userOne.constructor); 
-console.log(userOne.constructor);
+console.log(userOne); 
+// console.log(userOne.constructor);
 
